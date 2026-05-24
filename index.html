@@ -7,6 +7,11 @@
   </head>
   <body>
     <main>
+			<label class="theme-switch">
+				<input type="checkbox" id="theme-toggle" />
+				<span class="theme-slider"></span>
+			</label>
+			<button id="wireframe-toggle" class="wireframe-toggle" type="button">to boring right?, try this then: magicOn</button>
       <div class="resume">
 					<div class="container">
 						<div class="resume__block">
@@ -302,5 +307,15 @@
 					</div>
       </div>
     </main>
+
+    <div id="layer-wire">
+      <div id="wireframe-inner"></div>
+    </div>
+
+    <div id="cursor-ring"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-hint">ready</div>
+
+		<script src="script.js"></script>
   </body>
 </html>
