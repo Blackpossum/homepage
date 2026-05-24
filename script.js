@@ -14,7 +14,7 @@ function applyTheme(isDark) {
 }
 
 const wireframeNotes = [
-  "designer note: maybe give this section more space",
+  "designer note: maybe give this section more space, like she's always ask for more space :v",
   "designer note: this block looks too serious, better not let joker read this or he will say 'why so serious?'😒",
   "designer note: add a little orange accent here, or other color, wait.. im not good at colors :v",
   "designer note: align this copy to the grid",
