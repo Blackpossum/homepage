@@ -1,11 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="styles.css" />
     <title>Résumé</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+			<label class="theme-switch">
+				<input type="checkbox" id="theme-toggle" />
+				<span class="theme-slider"></span>
+			</label>
+			<button id="wireframe-toggle" class="wireframe-toggle" type="button">to boring right?, try this then: magicOn</button>
+      <div class="resume">
+					<div class="container">
+						<div class="resume__block">
+							<h1 class="contact-info__header">Yosephat Harwindra</h1>
+							<h3 class="contact-info__sub-header">Full-Stack Developer</h3>
+
+							<div class="contact_info_container fh">
+								<div class="contact-info__block">
+									<a href="" rel="author" class="contact-info__item">
+										<div class="contact-info__item-icon-wrapper">
+											<svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+												<path
+													d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0
+													192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535
+													13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817
+													80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+												></path>
+											</svg>
+										</div>
+										<span>Solo, Indonesia</span>
+									</a>
+								</div>
+
+								<div class="contact-info__block contact-info__block--center">
+									<img class="contact-info__avatar" src="assets/avatar.png" alt="Avatar" />
+								</div>
+
+								<div class="contact-info__block">
+									<a href="https://ua.linkedin.com/company/binary-studio_241166" rel="author" class="contact-info__item">
+										<div class="contact-info__item-icon-wrapper">
+											<svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+												<path
+													d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9
+													480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4
+													416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9
+													96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5
+													38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9
+													27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5
+													62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+												></path>
+											</svg>
+										</div>
+										<span>binary-studio</span>
+									</a>
+									<a class="contact-info__item" href="mailto:yosaphatharwindra@gmail.com">
+										<div class="contact-info__item-icon-wrapper">
+											<svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+												<path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
+											</svg>
+										</div>
+										<span>yosaphatharwindra@gmail.com</span>
+									</a>
+									<a class="contact-info__item" href="https://github.com/Blackpossum/" target="_blank">
+										<div class="contact-info__item-icon-wrapper">
+											<svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+												<path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/>
+											</svg>
+										</div>
+										<span>RadicalKestrel</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="resume__block">
+							<div class="intro">
+							<div class="intro__icon-wrapper">
+								<svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path
+										d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
+										24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
+										26.5 21.5 48 48 48h128c26.5 0 48-21.5
+										48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
+										64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0
+										103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0
+										48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+									></path>
+								</svg>
+							</div>
+							<p class="intro_text">I'm Erwin, a software developer driven by innovation and
+								problem-solving. With a strong background in computer science,
+								I'm dedicated to pushing boundaries and crafting elegant
+								solutions through code.
+							</p>
+							</div>
+						</div>
+					</div>
+					<!-- Skills -->
+					<div class="container">
+						<div class="resume__block">
+							<div class="skills">
+							<h3 class="skills__header">Skills</h3>
+								<div class="skills__category">
+									<div class="skills__category-label">Technical</div>
+									<div class="skills__tags">
+										<span class="skill-tag">JavaScript</span>
+										<span class="skill-tag">TypeScript</span>
+										<span class="skill-tag">Python</span>
+										<span class="skill-tag">SQL</span>
+										<span class="skill-tag">React.js</span>
+										<span class="skill-tag">Next.js</span>
+										<span class="skill-tag">Express.js</span>
+										<span class="skill-tag">Django</span>
+										<span class="skill-tag">Flask</span>
+										<span class="skill-tag">PostgreSQL</span>
+										<span class="skill-tag">MySQL</span>
+										<span class="skill-tag">AWS</span>
+										<span class="skill-tag">Docker</span>
+										<span class="skill-tag">Git</span>
+										<span class="skill-tag">Networking (MTCNA)</span>
+									</div>
+								</div>
+
+								<div class="skills__category" style="margin-top: 10px;">
+									<div class="skills__category-label">Soft Skills</div>
+									<div class="skills__tags">
+										<span class="skill-tag">Critical Thinking</span>
+										<span class="skill-tag">Team Collaboration</span>
+										<span class="skill-tag">Problem Solving</span>
+										<span class="skill-tag">Logical Thinking</span>
+										<span class="skill-tag">Attention to Detail</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Experience and Additional Info -->
+					<div class="container">
+						<div class="resume__block">
+							<div class="main-info fh">
+							<div class="experiences">
+								<h3 class="experiences__header">Experience</h3>
+
+								<!-- Formulatrix -->
+								<div class="experiences__company">
+									<span class="experiences__company-header-durability">Jul 2024  -  Present</span>
+									<h3 class="experiences__company-header-name">Formulatrix</h3>
+									<div class="experiences__company-project">
+										<span class="experiences__company-project-role">Frontend Software Engineer</span>
+										<ul class="experiences__company-project-responsibilities">
+											<li>Monitored app performance, debugged issues for enhanced UX</li>
+											<li>Developed internal applications with React and JavaScript</li>
+											<li>Collaborated cross-functionally to design and implement solutions</li>
+											<li>Integrated third-party APIs to extend application functionality</li>
+											<li>Utilized Git for version control and team collaboration</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- RevoU -->
+								<div class="experiences__company">
+									<span class="experiences__company-header-durability">Oct 2023  -  Apr 2024</span>
+									<h3 class="experiences__company-header-name">RevoU</h3>
+									<div class="experiences__company-project">
+										<span class="experiences__company-project-role">Associate Software Engineer</span>
+										<ul class="experiences__company-project-responsibilities">
+											<li>Built full-stack apps with JavaScript, React, and PostgreSQL</li>
+											<li>Monitored and optimized application performance</li>
+											<li>Integrated APIs and implemented JWT authentication flows</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Oji Sinarmas — Shift Leader -->
+								<div class="experiences__company">
+									<span class="experiences__company-header-durability">Apr 2022  -  Jan 2024</span>
+									<h3 class="experiences__company-header-name">Oji Sinarmas Packaging</h3>
+									<div class="experiences__company-project">
+										<span class="experiences__company-project-role">Shift Leader (acting)</span>
+										<ul class="experiences__company-project-responsibilities">
+											<li>Reduced machine downtime from 60+ min → 30 min per shift</li>
+											<li>Hit 6,500 m/ton daily production target (up from 2,560 m/ton)</li>
+											<li>Maintained monthly waste below 10% via preventive maintenance</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Oji Sinarmas — Control Room -->
+								<div class="experiences__company">
+									<span class="experiences__company-header-durability">Apr 2020  -  Apr 2022</span>
+									<h3 class="experiences__company-header-name">Oji Sinarmas Packaging</h3>
+									<div class="experiences__company-project">
+										<span class="experiences__company-project-role">Syncro Control Room Engineer</span>
+										<ul class="experiences__company-project-responsibilities">
+											<li>Optimized efficiency via Syncro parameter process control</li>
+											<li>Ensured product quality met QC and GMP standards</li>
+											<li>Created daily reports and monthly data records</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+								<div class="additional-info fv">
+									<div class="additional-info__education">
+									<h3 class="additional-info__education-header">Education</h3>
+
+									<div class="additional-info__education-university">
+										<span class="additional-info__education-university-durability">Sep 2023  -  Apr 2024</span>
+										<h3 class="additional-info__education-university-speciality">Fullstack Software Engineer</h3>
+										<p class="additional-info__education-university-name">RevoU</p>
+									</div>
+
+									<div class="additional-info__education-university">
+										<span class="additional-info__education-university-durability">May 2016  -  May 2019</span>
+										<h3 class="additional-info__education-university-speciality">Mechanical Engineering</h3>
+										<p class="additional-info__education-university-name">SMK St. Mikael Surakarta · score: 30.95</p>
+									</div>
+								</div>
+
+								<div class="additional-info__languages">
+									<h3 class="additional-info__languages-header">Languages</h3>
+									<p class="additional-info__languages-item">🇮🇩 Indonesian — Native</p>
+									<p class="additional-info__languages-item">🇬🇧 English — Professional</p>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="resume__block" id="sec-projects">
+							<h3 class="projects__header">Projects</h3>
+
+							<div class="project-item">
+								<div class="project-item__header">
+									<h3 class="project-item__name">Fmlx Common UI</h3>
+									<span class="project-item__durability">Jul 2024 – Present · Formulatrix</span>
+								</div>
+								<span class="project-item__role">Frontend Engineer</span>
+								<ul class="project-item__list">
+									<li>Built scalable, reusable UI component library for internal applications</li>
+									<li>Enhanced pagination, collapsible tables, and modal components</li>
+									<li>Improved data visualization with dynamic "Data not found" empty states</li>
+									<li>Cross-functional collaboration to ensure consistent multi-platform implementation</li>
+								</ul>
+							</div>
+
+							<div class="project-item">
+								<div class="project-item__header">
+									<h3 class="project-item__name">ESS Internal Web Application</h3>
+									<span class="project-item__durability">Jul 2024 – Nov 2024 · Formulatrix</span>
+								</div>
+								<span class="project-item__role">Frontend Engineer</span>
+								<ul class="project-item__list">
+									<li>Developed responsive interfaces with React and reusable component system</li>
+									<li>Integrated News API and JWT authentication for seamless UX</li>
+									<li>Refactored core components for long-term maintainability</li>
+									<li>Implemented robust error handling throughout the application</li>
+								</ul>
+							</div>
+
+							<div class="project-item">
+								<div class="project-item__header">
+									<h3 class="project-item__name">Tech for Village</h3>
+									<span class="project-item__durability">Sep 2021 – Nov 2021 · RevoU Final Project</span>
+								</div>
+								<span class="project-item__role">Fullstack Engineer</span>
+								<ul class="project-item__list">
+									<li>Built responsive full-stack web application with React</li>
+									<li>Integrated JWT authentication and News API</li>
+									<li>Used React Hook Form + Zod for form validation and error handling</li>
+									<li>Ensured cross-device accessibility and responsiveness</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Certifications -->
+					<div class="container">
+						<div class="resume__block no-border" id="sec-certs">
+							<h3 class="certifications__header">Certifications</h3>
+							<div class="cert-grid">
+								<div class="cert-item">
+									<div class="cert-item__name">AWS Cloud Practitioner Essentials</div>
+									<div class="cert-item__date">Dec 17, 2023</div>
+								</div>
+								<div class="cert-item">
+									<div class="cert-item__name">JavaScript Essentials 1</div>
+									<div class="cert-item__date">Dec 10, 2023</div>
+								</div>
+								<div class="cert-item">
+									<div class="cert-item__name">Seluk Beluk Jaringan Komputer</div>
+									<div class="cert-item__date">Sep 28, 2023</div>
+								</div>
+								<div class="cert-item">
+									<div class="cert-item__name">Python Essentials 1</div>
+									<div class="cert-item__date">May 27, 2024</div>
+								</div>
+								<div class="cert-item">
+									<div class="cert-item__name">MikroTik Certified Network Associate (MTCNA)</div>
+									<div class="cert-item__date">May 17, 2024</div>
+								</div>
+							</div>
+						</div>
+					</div>
+      </div>
+    </main>
+
+    <div id="layer-wire">
+      <div id="wireframe-inner"></div>
+    </div>
+
+    <div id="cursor-ring"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-hint">ready</div>
+
+		<script src="script.js"></script>
   </body>
 </html>
